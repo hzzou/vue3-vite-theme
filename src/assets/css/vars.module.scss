@@ -1,0 +1,27 @@
+// 全局变量
+:root {
+  --basic-bg: rgba(33, 44, 55, 0.8);
+  --basic-color: rgba(255, 255, 255, 1);
+  --hover-color: #00a0ff;
+}
+
+// 菜单栏默认主题
+$basic-bg: var(--basic-bg);
+$basic-color: var(--basic-color);
+
+// 菜单栏两种主题，用于配置
+$dark-bg: rgba(33, 44, 55, 0.8);
+$dark-color: rgba(255, 255, 255, 1);
+$light-bg: rgba(150, 150, 150, 0.9);
+$light-color: rgba(0, 0, 0, 1);
+
+$hover-color: var(--hover-color);
+$normal-size: 14px !default;
+
+// css module模式特有的功能
+:export{
+  darkBg: $dark-bg;
+  darkColor: $dark-color;
+  lightBg: $light-bg;
+  lightColor: $light-color;
+}
